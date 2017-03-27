@@ -1,0 +1,55 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/main2.css" media="all" rel="stylesheet" type="text/css" /> */
+
+
+//VIVAMUS Main controller only
+
+//Import bourbon from CodeKit
+//@import "bourbon";
+
+
+// Import basic Styles
+@import "vivamus/mixins/center-block";
+@import "vivamus/mixins/clearfix";
+@import "vivamus/mixins/grid";
+@import "vivamus/mixins/grid-framework";
+
+@import "vivamus/normalize";
+@import "vivamus/base";
+@import "vivamus/layout";
+
+// Import Modules and layouts here:
+
+
+
+// Import Print & Helpers
+@import "vivamus/helpers";
+@import "vivamus/print";
+
+// Import Shame (for shit that shouldn't be there, and should be refactored in the future)
+// This project it copied some Bootstrap styles
+@import "vivamus/shame";
+
+// Custom Import Vivamus Project
+// variables and mixins
+@import "vivamus/variables";
+@import "vivamus/mixins";
+
+//layout
+@import "vivamus/grid";
+
+//vivamus custom 
+@import "vivamus-custom/fonts";
+@import "vivamus-custom/custom-mixins";
+@import "vivamus-custom/custom-variables";
+@import "vivamus-custom/custom-style";
+@import "vivamus-custom/base";
+@import "vivamus-custom/nav-header";
+@import "vivamus-custom/layout";
+@import "vivamus-custom/main";
+@import "vivamus-custom/main-one";
+@import "vivamus-custom/main-three";
+@import "vivamus-custom/page-footer";
+@import "vivamus-custom/user-interface";
+

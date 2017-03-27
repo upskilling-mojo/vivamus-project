@@ -1,0 +1,38 @@
+body {
+	font-family: $primaryfontSansSerif;
+	@include rem(font-size, 1.6);
+	color: $primaryGreen;
+
+	> header article {
+		background-color: $primaryGreen;
+	}
+
+		/* ## Headings
+		--------------------------------------------- */
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: $primaryfontSansSerif;
+			color: $primaryGreen;
+		}
+
+		h1 {
+			@include rem(font-size, 3.6);
+		}
+
+		h2 {
+			@include rem(font-size, 3.0);
+			color: $primaryGreen;
+		}
+
+		h3 {
+			@include rem(font-size, 2.5);
+		}
+
+}//body
+
+

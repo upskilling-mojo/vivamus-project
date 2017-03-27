@@ -1,0 +1,63 @@
+body {
+	> header {
+		background-color: $primaryGreen;
+
+		> article {
+
+			> div {
+				//@include verticalCenter;
+				@include rem(padding-top, 5);
+				@include rem(padding-bottom, 5);
+
+				> section {
+
+					> h1 {
+					    max-width: 50%;
+    					margin: 0 auto;
+
+						  @media (min-width: $screen-sm-min) {//768px
+    						max-width: 85%;
+							margin: 0;
+  						}
+					}
+
+				}
+			} 
+
+			section#search-main {
+				> div {
+					position: relative;
+					@include rem(margin-top, 1.5);
+
+					form {
+						> input {
+							&#vivamus-search {
+
+							}
+							&.search-submit {
+								position: absolute;
+								top: 0; 
+								right: 0;
+								background-color: transparent;
+							    color: transparent;
+							    border: transparent;
+							    z-index: 2;
+							}
+						}
+						span {
+								background-image: url(../img/icon-search.png);
+							    height: 35px;
+							    width: 35px;
+							    background-repeat: no-repeat;
+							    position: absolute;
+							    right: 0;
+							    top: 5px;
+							    @include rem(background-size, 2.5);
+						}
+					}
+				}//> div
+			}//section#search-main
+
+		}//article
+	}//header
+}//body
